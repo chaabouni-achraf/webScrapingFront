@@ -1,0 +1,6 @@
+[25-Oct-2022 19:52:04 UTC] PHP Warning:  get_current_user() has been disabled for security reasons in /home/dimazina/public_html/produits/1666727241.php on line 231
+[25-Oct-2022 19:52:17 UTC] PHP Warning:  get_current_user() has been disabled for security reasons in /home/dimazina/public_html/produits/1666727241.php on line 231
+[25-Oct-2022 19:52:50 UTC] PHP Warning:  get_current_user() has been disabled for security reasons in /home/dimazina/public_html/produits/1666727241.php on line 231
+[25-Oct-2022 19:53:18 UTC] PHP Warning:  get_current_user() has been disabled for security reasons in /home/dimazina/public_html/DIMAZINA_admin/vendors/scripts/config.inc.php on line 231
+[25-Oct-2022 19:55:30 UTC] PHP Warning:  get_current_user() has been disabled for security reasons in /home/dimazina/public_html/DIMAZINA_admin/vendors/scripts/config.inc.php on line 231
+[02-Nov-2022 00:03:21 UTC] PHP Warning:  get_current_user() has been disabled for security reasons in /home/dimazina/public_html/DIMAZINA_admin/vendors/scripts/config.inc.php on line 231

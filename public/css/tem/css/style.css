@@ -1,0 +1,441 @@
+    /* ####################################################
+    :: Template Name: Essence - Fashion Ecommerce Template
+    :: Author: Colorlib
+    :: Author URL: https://colorlib.com
+    :: Description: Essence is smart & elegant fashion e-commerce Template. It's suitable for all e-commerce business platform.
+    :: Version: 1.0.0
+    :: Created: April 27, 2018
+    :: Last Updated: May 2, 2018
+    #################################################### */
+
+    /* ---------------------------------------
+    ##### - PLACE YOUR CUSTOM CSS HERE - #####
+    --------------------------------------- */
+    .welcome_area {
+    position: relative;
+    z-index: 1;
+    height: auto;
+ 
+}
+ul li, ol li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    -webkit-transform-style: preserve-3d;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #2f466c;
+    line-height: 1.3;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+}
+.h4-footer{
+	color: #bbb8b7;
+    font-size: 15px;
+}
+.single-product-wrapper .product-description p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: #ff5722;
+}
+.single-product-wrapper .product-description h6 {
+    color: #2f466c;
+    margin-bottom: 5px;
+}
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.bgwhite {
+    background-color: white;
+}
+
+.p-b-46 {
+    padding-bottom: 46px;
+}
+.p-t-62 {
+    padding-top: 62px;
+}
+.w-size5 {
+    width: calc(100% / 3);
+}
+.m-text12 {
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+.flex-col-c {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.p-r-15 {
+    padding-right: 15px;
+}
+.p-l-15 {
+    padding-left: 15px;
+}
+.p-b-15 {
+    padding-bottom: 15px;
+}
+.p-t-16 {
+    padding-top: 16px;
+}
+.bo2 {
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+.shipping{
+        background-color: #fff;
+    box-shadow: 0 0 28px rgb(0 0 0 / 14%);
+    border-radius: 10px;
+  
+}
+.t-left{
+	    border-left: 1px solid #ffffff;
+}
+.t-right{
+	border-right: 1px solid #ffffff;
+}
+.t-center {
+    text-align: center;
+}
+.flex-w {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.footer_area .single_widget_area .footer_widget_menu li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 54%;
+    width: 50%;
+
+}
+.footer_area {
+    position: relative;
+    z-index: 1;
+    background-color: #2f466c;
+    padding: 20px 0 20px;
+}
+
+.logo{
+    width: 13%;
+}
+
+.logo2{
+    width: 50%;
+}
+
+.breadcumb_area:after {
+    background-color: rgb(255 255 255 / 64%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    content: '';
+}
+.breadcumb_area.breadcumb-style-two {
+    width: 100%;
+    height: 200px;
+}
+.single-product-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 4px 8px 0 rgb(0 0 0 / 19%);
+    border-radius: 10px;
+}
+
+.single-product-wrapper .product-description {
+    position: relative;
+    z-index: 1;
+    padding-top: 25px;
+    text-align: center;
+}
+a {
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    text-decoration: none;
+    outline: 0 solid transparent;
+    color: #FF5722;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#scrollUp {
+    background-color: #FF5722;
+    border-radius: 0;
+    bottom: 60px;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 30%);
+    color: #ffffff;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    right: 60px;
+    text-align: center;
+    width: 40px;
+}
+.classy-nav-container {
+    position: relative;
+    z-index: 100;
+    background-color: #f2f2f2;
+}
+@media only screen and (max-width: 767px)
+{
+.header_area .classy-navbar, .header_area .header-meta {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 50%;
+    min-width: 50%;
+    width: 100%;
+}
+}
+
+    @media screen and (max-width: 450px) {
+            .logo {
+                width: 23%;  
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width:767px) {
+ .logo {
+                width: 23%;
+                
+            }
+        }
+
+.img_pro {
+
+    width: 100%!important;
+     height: auto!important;
+    
+}
+.header_area .favourite-area a, .header_area .user-login-info a, .header_area .cart-area a {
+    position: relative;
+    z-index: 1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 90px;
+    flex: 0 0 90px;
+    width: 90px;
+    display: block;
+    text-align: center;
+    border-left: 1px solid #ff5722;
+    height: 100%;
+    line-height: 80px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    margin-top: 85px;
+}
+a {
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    text-decoration: none;
+    outline: 0 solid transparent;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+}
+a:hover,:focus{
+    transition(all 500ms ease 0s);
+    text-decoration: none;
+    outline: 0 solid transparent;
+    color: #ff5722;
+    font-weight: 600;
+    font-size: 12px;
+    
+    }
+}
+.header_area .favourite-area a, .header_area .user-login-info a, .header_area .cart-area a {
+
+    border-left: 1px solid #ff5722;
+  }
+
+.single_product_details_area .single_product_desc .product-price {
+    margin-bottom: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    color: #dc0345;
+    font-weight: 700;
+}
+
+.single_product_details_area .single_product_desc span {
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    color: #787878;
+    margin-bottom: 10px;
+    display: initial;
+}
+.feature {
+	text-align: center;
+	background: #2f466c;
+	height: 100%;
+}
+
+.feature:nth-child(2) {
+	background: #dfe3df;
+}
+
+.feature:nth-child(2) h4 {
+	color: #2f466c;
+}
+
+.feature .feature-inner {
+	padding: 20px 25px;
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.feature .feature-icon {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.feature h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+
+.features-section{
+	  position: relative;
+    bottom: 34px;
+    z-index: 500;
+}
+
+    @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&display=swap');
+.product-list {
+    padding: 20px 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.product-list>ul {
+    margin: 0 -10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.product-list>ul>li {
+    width: 25%;
+    padding: 10px;
+}
+.white-box {
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
+    padding: 35px 20px;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.wishlist-icon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+.wishlist-icon img {
+    width: 20px;
+    height: 20px;
+}
+.product-img {
+    min-height: 135px;
+}
+.product-img img {
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+.product-bottom {
+    text-align: center;
+}
+.product-name {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 10px 0 10px;
+    font-weight: 600;
+    max-height: 48px;
+    min-height: 48px;
+    overflow: hidden;
+}
+.price {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #dc0345;
+    font-family: 'Open Sans', sans-serif;
+}
+.blue-btn {    
+    background: #2f466c;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    font-size: 14px;
+    padding: 0 0px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    max-width: 132px;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.price .line-through {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+    vertical-align: 1px;
+    display: inline-block;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
