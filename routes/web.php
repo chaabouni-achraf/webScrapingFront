@@ -19,7 +19,10 @@ use Illuminate\Support\Facades\Route;
 //Route::resource('Info-fournisseur','InfoFournisseursController');
 
 Route::match(['get', 'post'],'/acceuil',"UserAdminController@acceuil")->name('acceuil');
+Route::match(['get', 'post'],'/recherche',"UserAdminController@recherche")->name('recherche');
 Route::match(['get', 'post'],'/Profile',"UserAdminController@profile")->name('profile');
+Route::match(['get', 'post'],'/Profile1',"UserAdminController@profile1")->name('profile1');
+
 
 
 

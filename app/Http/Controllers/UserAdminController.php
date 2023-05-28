@@ -20,69 +20,42 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\DB;
+use GuzzleHttp\Client;
 
 class UserAdminController extends Controller
 {
     public function acceuil()
     {
-        return view('acceuil');
+        $client = new Client();
+        $key = "cellphone";
+        $response = $client->get('http://localhost:3000/scraping/'. $key);
+        $data = json_decode($response->getBody(), true);
+        return view('acceuil',compact('data'));
     }
+
+ 
 
     public function profile()
     {
+        $countadmin = Admin::count();
+        $admin = Admin::first();
 
-         $countadmin=Admin::count();
-         $admin=Admin::first();
-       
-        return view('profile',compact('admin','countadmin'));
-
+        return view('profile', compact('admin', 'countadmin'));
     }
 
-
-        public function Ajoutadmin()
-    {
-
-        if(!Auth::guard('admin')->check()) 
-          {
-             return  redirect()->route('/');           
-          }
-          else
-          {
-         
-        return view('Ajouter_admin');
-    }
-
-    }
-
-            public function Modifieradmin(request $request)
-    {
-
-        if(!Auth::guard('admin')->check()) 
-          {
-             return  redirect()->route('/');           
-          }
-          else
-          {
-            $id=$request->id;
-
-               if($id=="")
-               {
-                $session=Session::get('id');
-               }
-               else
-               {
-                session()->forget('id');
-                Session()->put('id', $id);
-                $session=Session::get('id');      
-               }
-               $admins=Admin::where('id' , '=', $session)->first();
-               //dd($admins);
-        return view('Modifier_admin',compact('admins'));
-    }
-
-    }
-
+   
 
     
-  
+    public function recherche()
+    {
+
+        $search=$request->search;
+        dd($search);
+        $client = new Client();
+        $response = $client->get('http://localhost:3000/scrapingFilter/'. $search);
+        $data = json_decode($response->getBody(), true);
+        return view('acceuil',compact('data'));
+    }
+   
+
 }

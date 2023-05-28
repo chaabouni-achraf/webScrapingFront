@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Fournisseur;
 use Illuminate\Support\Facades\Auth;
 use App\Createur;
+use GuzzleHttp\Client;
 class LoginController extends Controller
 {
     /*
@@ -43,7 +44,12 @@ class LoginController extends Controller
 
     public function showAdminLoginForm()
     {
-        return view('acceuil', ['url' => 'admin']);
+        $client = new Client();
+        $key = "cellphone";
+        $response = $client->get('http://localhost:3000/scraping/'. $key);
+        $data = json_decode($response->getBody(), true);
+
+        return view('acceuil', ['url' => 'admin'],compact('data'));
     }
 
     public function adminLogin(Request $request)
